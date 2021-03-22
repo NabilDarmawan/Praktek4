@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$("div").dblclick(function(){
+	$(this).css({background: "red"});
+	});
+	$("div").mouseleave(function(){
+	$(this).css({background: "yellow"});
+	});
+	});
+</script>
+<style type="text/css">
+	div{
+		background: yellow;
+		width: 80px;
+		height: 80px;
+		float: left;
+		margin: 10px;
+		cursor: pointer;
+	}
+</style>
+</head>
+<body>
+	<p> Klik 2 kali untuk mengubah warna pada kotak </p>
+	<div>  </div>
+	<div>  </div>
+	<div>  </div>
+	<div>  </div>
+</body>
+</html>
